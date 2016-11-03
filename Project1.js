@@ -15,32 +15,28 @@ $(document).ready(function(){
   }, 800)
   }
 
-   for(var i=0; i<5; i++) {
-      moveBadGuys();
-    }
+  moveBadGuys();
 
-    var body = $('body');
-    function checkForWinner(){
-      if ($('.badguy').length === 0){
-        alert("Congratulations!!!! You found The White Transvaal Lion!")
-      }
-    }
+    // var body = $('body');
+    // function checkForWinner(){
+    //   if ($('.badguy').length === 0){
+    //     alert("Congratulations!!!! You found The White Transvaal Lion!")
+    //   }
+    // }
   $('.badguy').click(function(){
-    alert("Shot");
-    $( ".badguy" ).hide();
+    // alert("Shot");
+    $( '.badguy' ).hide();
+
   });
 
+$('body').click(function(){
+// I used .get because I'm using #gunshot as a native javascript object and if I didn't I would be using a jquery object
+$('#gunshot').get(0).play();
+})
 
 })
 
 
-// duck.click(function(){
-//       $(this).addClass('shot');
-//       var that=(this)
-//       setTimeout(function(){
-//         $(that).remove();
-//         checkForWinner();
-//       }, 1000);
-//     })
-//     body.append(duck);
+  // var game_start = new Audio('audio/start-round.mp3');
+  // game_start.play();
 
