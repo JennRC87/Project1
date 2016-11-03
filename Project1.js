@@ -1,49 +1,46 @@
 $(document).ready(function(){
 
-function moreBadGuys(){
+  function moveBadGuys(){
 
+  $( "#villain-container") .hide();
 
-$( "#villain-container") .hide();
+  setInterval(function(){
+  $( "#villain-container").show();
 
-// $("#villian1").css({
-//   "top": Math.random() * window.innerHeight + "px",
-//   "left":Math.random() * window.innerHeight + "px"
-// })
-
-
-setInterval(function(){
-$( "#villain-container").show();
-
-$("#villain1").css({
-  "top": Math.random() * parseInt($('#villain-container').css('height')) + "px",
-  "left":Math.random() * parseInt($('#villain-container').css('width')) + "px"
-})
-console.log('timeout')
-}, 700)
-}
- for(var i=0; i<5; i++) {
-    moreBadGuys();
+  $("#villain1").css({
+    "top": Math.random() * parseInt($('#villain-container').css('height')) + "px",
+    "left":Math.random() * parseInt($('#villain-container').css('width')) + "px"
+  })
+  console.log('timeout')
+  }, 800)
   }
 
+   for(var i=0; i<5; i++) {
+      moveBadGuys();
+    }
+
+    var body = $('body');
+    function checkForWinner(){
+      if ($('.badguy').length === 0){
+        alert("Congratulations!!!! You found The White Transvaal Lion!")
+      }
+    }
+  $('.badguy').click(function(){
+    alert("Shot");
+    $( ".badguy" ).hide();
+  });
+
 
 })
-//gets the villians to appear and dissappear
-// setTimeout(function() {
-//     $('#villian1').fadeOut('fast');
-// }, 5000)
-
-// setTimeout(function() {
-//     $('#villian1').fadeIn('fast');
-// }, 10000)
-
-// })
 
 
-// $('#menu').click(function(){
-//     if ($('.undermenu').css('display') == 'block') {
-//         $('.undermenu').hide();
-//     }
-//     else {
-//         $('.undermenu').show();
-//     }
-// });
+// duck.click(function(){
+//       $(this).addClass('shot');
+//       var that=(this)
+//       setTimeout(function(){
+//         $(that).remove();
+//         checkForWinner();
+//       }, 1000);
+//     })
+//     body.append(duck);
+
