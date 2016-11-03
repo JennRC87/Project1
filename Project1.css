@@ -1,0 +1,34 @@
+body{
+  background-image: url("images/alleybackground.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1{
+  font-family: 'Yesteryear', cursive;
+  color: #FF4A01;
+  text-align: center;
+  font-size: 50px;
+}
+
+.badguy{
+  width: 100px;
+  height: 100px;
+  background: pink;
+  position: absolute;
+  /* display: inline-block; */
+  /* margin-left: 10px; */
+}
+
+.villains{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#villain-container{
+  max-height: 400px;
+  max-width: 1200px;
+}
