@@ -11,11 +11,14 @@ Pseudo Code:
 - make shapes that act in the place of characters
 - figure out how to get the characters to appear and disappear (timed)
 - figure out how to use the mouse to shoot at characters
+- figure out how shooting villain will prompt a win
+
+- make five villians
+- for every so many misses get the villain to attack and you lose
 - write story to the game
 - write prompts to display on the screen to tell the user the directions to the story
-- figure out how shooting all five villains will prompt a win
 - get “The White Transvaal Lion to display once the user has won
-- for every so many misses get the villain to attack and you lose
+
 
 Bonus:
 - get the user’s avatar to slide across the screen with the mouse
