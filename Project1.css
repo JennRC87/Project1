@@ -15,12 +15,12 @@ h1{
 }
 
 .badguy{
-  width: 100px;
-  height: 100px;
+ /*  width: 100px;
+  height: 100px; */
   /* background: pink; */
-  position: absolute;
- /*  display: inline-block; */
-  /* margin-left: 10px; */
+  position: relative;
+  /* Thanks Marcos! Makes transidtions smoother*/
+  transition: top 800ms, left 800ms;
 }
 
 .villains{

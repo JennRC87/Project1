@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  var clickCounter = 0
   var counter = 1
   //starts out with one bad guy
 
@@ -45,7 +47,11 @@ $(document).ready(function(){
     // I used .get because I'm using #gunshot as a native javascript object and if I didn't I would be using a jquery object
     $('#gunshot').get(0).play();
 
+    clickCounter++
+     if (clickCounter === 9) {
+      alert ('Somebody call the meat wagon. You just got bumped off.')
+      }
+
     })
 
 })
-

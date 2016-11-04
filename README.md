@@ -12,14 +12,17 @@ Pseudo Code:
 - figure out how to get the characters to appear and disappear (timed)
 - figure out how to use the mouse to shoot at characters
 - figure out how shooting villain will prompt a win
-
 - make five villians
-- for every so many misses get the villain to attack and you lose
 - write story to the game
-- write prompts to display on the screen to tell the user the directions to the story
+- for every so many misses get the villain to attack and you lose
+
+- get text to display on the screen to tell the user the directions to the story
 - get “The White Transvaal Lion to display once the user has won
 
 
-Bonus:
+
+MVP:
 - get the user’s avatar to slide across the screen with the mouse
 - make buttons to pause game 
+- get “The White Transvaal Lion to display once the user has won
+
