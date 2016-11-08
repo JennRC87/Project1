@@ -7,7 +7,7 @@ User Story:
 
 
 
-Pseudo Code:
+Pseudo Code/MVP:
 - make shapes that act in the place of characters
 - figure out how to get the characters to appear and disappear (timed)
 - figure out how to use the mouse to shoot at characters
@@ -24,5 +24,4 @@ Pseudo Code:
 MVP:
 - get the user’s avatar to slide across the screen with the mouse
 - make buttons to pause game 
-- get “The White Transvaal Lion to display once the user has won
 

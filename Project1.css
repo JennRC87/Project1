@@ -15,12 +15,12 @@ h1{
 }
 
 .badguy{
- /*  width: 100px;
-  height: 100px; */
-  /* background: pink; */
-  position: relative;
-  /* Thanks Marcos! Makes transidtions smoother*/
+  position: absolute;
+  /* Thanks Marcos! Makes transitions smoother*/
   transition: top 800ms, left 800ms;
+  user-select: none;
+  -webkit-user-select: none;
+  display: none;
 }
 
 .villains{
@@ -32,4 +32,88 @@ h1{
 #villain-container{
   max-height: 400px;
   max-width: 1200px;
+  cursor: crosshair;
+}
+
+p{
+    font-family: "Noir";
+    color: #FF4A01;
+    margin: 0px 5px 0px 40px;
+    font-size: 18px;
+}
+
+
+#story-box{
+  height: 110px;
+  width: 1200px;
+  /* border: 2px pink solid; */
+  overflow: hidden;
+  text-align: justify;
+  position: absolute;
+  top: 490px;
+  left: -12px;
+  line-height: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 200;
+}
+
+#score-board{
+  font-family: "Noir";
+  color: #000;
+  position: absolute;
+  height: 80px;
+  width: 100px;
+  background-color: #FF4A01;
+  top: 100px;
+  right: 50px;
+  opacity: .7;
+  padding-top: 6px;
+  text-align: center;
+   -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg)
+}
+
+#shotsFired{
+  color: #000;
+  margin: 10px 0px 0px 0px;
+}
+
+#story{
+  position: relative;
+  top: 0;
+  left: 0;
+/* I left this because it made the transition smoother */
+  transition: top 1s;
+}
+
+#button{
+  z-index: 5000;
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px #FF4A01 solid;
+  padding: 8px;
+  color: white;
+  display: block;
+  position: absolute;
+  right: 15px;
+  font-family: "Noir";
+  cursor: pointer;
+}
+
+#button:hover{
+  box-shadow: 4px 3px 10px #6C290E;
+}
+
+#button:focus{
+  outline:0;
+}
+
+#lion{
+  width: 150px;
+  right: 25px;
+  position: absolute;
+  top: 150px;
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg)
 }
